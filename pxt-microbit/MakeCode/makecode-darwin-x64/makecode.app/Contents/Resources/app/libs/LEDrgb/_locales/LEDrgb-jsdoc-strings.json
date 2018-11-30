@@ -1,0 +1,7 @@
+{
+  "Servo": "使用此文件来定义自定义函数和图形块。\n想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom\n\n自定义图形块",
+  "Servo.Servo": "Servo Execute",
+  "Servo.ServoPulse": "Servo Execute",
+  "Servo.ServoPulse|param|pulse": "[500-2500] pulse of servo; eg: 1500, 500, 2500",
+  "Servo.Servo|param|degree": "[0-180] degree of servo; eg: 90, 0, 180"
+}

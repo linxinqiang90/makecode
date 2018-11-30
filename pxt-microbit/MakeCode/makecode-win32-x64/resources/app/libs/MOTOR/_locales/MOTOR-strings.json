@@ -1,0 +1,6 @@
+{
+  "MOTOR.ServoMotor|block": "电机 方向选择|%channel|角度 %degree",
+  "MOTOR.ServoPulseMotor|block": "电机  方向选择|%channel|速度 %pulse",
+  "MOTOR|block": "电机马达",
+  "{id:category}MOTOR": "MOTOR"
+}
