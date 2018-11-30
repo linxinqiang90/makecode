@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron');
+const {app, BrowserWindow, Menu, Tray} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -8,14 +8,24 @@ const execa = require('execa');
 path = require('path');
 
 
-function createWindow(url) {
+function createWindow(data) {
 
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600})
+    mainWindow = new BrowserWindow({
+        width: 1500,
+        height: 800,
+        center: true,
+        backgroundColor: '#80FFFFFF',
+        title: "test"
+    });
 
-    // and load the index.html of the app.
-    // mainWindow.loadURL(`http://locahost:${port}`)
-    mainWindow.loadURL(url)
+    if (data.type == 'file') {
+        mainWindow.loadFile(data.url);
+    } else {
+        // and load the index.html of the app.
+        // mainWindow.loadURL(`http://locahost:${port}`)
+        mainWindow.loadURL(data.url);
+    }
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
 
@@ -40,11 +50,16 @@ async function startApp() {
     stream.stdout.on('data', chunk => {
         let stdString = chunk.toString().trim();
         if (stdString.indexOf("To launch the editor, open this URL:") != -1) {
-            var patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
-            let result = patt.exec(stdString);
-            execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
-            execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
-            createWindow(result[0]);
+            let patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
+            let result = patt.exec(stdString.replace('---------------------------------------------', '').replace('\n', ''));
+            try {
+                console.info(result);
+                execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
+                execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
+                createWindow({type: "url", url: result[0]});
+            } catch (e) {
+                createWindow({type: "file", url: 'index.html'});
+            }
         }
     });
 };
