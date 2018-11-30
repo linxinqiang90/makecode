@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-common-packages" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit/libs/IR" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit/libs/LEDrgb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit/libs/MOTOR" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit_test/libs/IR" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit_test/libs/LEDrgb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pxt-microbit_test/libs/MOTOR" vcs="Git" />
+  </component>
+</project>
