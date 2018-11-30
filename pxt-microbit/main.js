@@ -57,11 +57,14 @@ async function startApp() {
                 execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
                 execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
                 createWindow({type: "url", url: result[0]});
+                return;
             } catch (e) {
                 createWindow({type: "file", url: 'index.html'});
+                return;
             }
         }
     });
+    createWindow({type: "file", url: 'index.html'});
 };
 
 // This method will be called when Electron has finished
