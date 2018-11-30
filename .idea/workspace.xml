@@ -8,7 +8,6 @@
       <change afterPath="$PROJECT_DIR$/pxt-microbit/libs/LEDrgb/_locales/LEDrgb-strings.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/_locales/MOTOR-jsdoc-strings.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/_locales/MOTOR-strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/IR" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/IR" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/IR/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/IR/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/IR/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/IR/.travis.yml" afterDir="false" />
@@ -50,8 +49,6 @@
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/pxt.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/pxt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/libs/MOTOR/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxt-microbit/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxt-microbit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt-microbit/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -129,29 +126,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxt-microbit/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pxt-microbit/package-shell.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pxt-microbit/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -244,7 +223,7 @@
       <path value="$PROJECT_DIR$/pxt-microbit/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="960" />
     <option name="height" value="1037" />
   </component>
@@ -311,18 +290,18 @@
       <updated>1543467876276</updated>
       <workItem from="1543467877474" duration="8587000" />
       <workItem from="1543478737839" duration="10943000" />
-      <workItem from="1543546985785" duration="24292000" />
+      <workItem from="1543546985785" duration="24556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43822000" />
+    <option name="totallyTimeSpent" value="44086000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1037" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1037" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25988403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25988403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -335,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33849558" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33849558" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -576,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxt-microbit/package-shell.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxt-microbit/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -592,8 +564,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxt-microbit/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxt-microbit/package-shell.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
