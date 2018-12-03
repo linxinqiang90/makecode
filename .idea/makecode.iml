@@ -3,9 +3,15 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/pxt-common-packages/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/pxt-microbit/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/pxt/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+    <content url="file://$MODULE_DIR$/pxt-common-packages/node_modules" />
+    <content url="file://$MODULE_DIR$/pxt-microbit/node_modules" />
+    <content url="file://$MODULE_DIR$/pxt/node_modules" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

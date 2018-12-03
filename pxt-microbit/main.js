@@ -43,7 +43,7 @@ function createWindow(data) {
  * @returns {Promise<void>}
  */
 
-async function startApp() {
+async function c() {
     // Pipe the child process stdout to the current stdout
     execa('echo', ['start web app...']).stdout.pipe(process.stdout);
     const stream = execa('node', [path.join(__dirname, 'node_modules/pxt/cli'), 'serve', '--just', '--noBrowser']);
@@ -53,7 +53,7 @@ async function startApp() {
             let patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
             let result = patt.exec(stdString.replace('---------------------------------------------', '').replace('\n', ''));
             try {
-                console.info(result);
+                console.log(result);
                 execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
                 execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
                 createWindow({type: "url", url: result[0]});
