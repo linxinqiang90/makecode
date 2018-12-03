@@ -1,7 +1,7 @@
 {
   "name": "pxt-microbit",
   "version": "1.2.16",
-  "main": "main.js",
+  "main": "./node_modules/pxt/pxt",
   "description": "micro:bit target for Microsoft MakeCode (PXT)",
   "keywords": [
     "JavaScript",
@@ -61,6 +61,9 @@
   "dependencies": {
     "acorn": "^6.0.4",
     "execa": "^1.0.0",
+    "install": "^0.12.2",
+    "log4js": "^3.0.6",
+    "npm": "^6.4.1",
     "pxt": "^0.5.1",
     "pxt-common-packages": "0.25.10",
     "pxt-core": "4.4.8"

@@ -6,6 +6,13 @@ const {app, BrowserWindow, Menu, Tray} = require('electron');
 let mainWindow;
 const execa = require('execa');
 path = require('path');
+const log4js = require('log4js');
+log4js.configure({
+    appenders: {makecode: {type: 'file', filename: 'makecode.log'}},
+    categories: {default: {appenders: ['makecode'], level: 'debug'}}
+});
+
+const logger = log4js.getLogger('makecode');
 
 
 function createWindow(data) {
@@ -43,28 +50,31 @@ function createWindow(data) {
  * @returns {Promise<void>}
  */
 
-async function c() {
+async function startApp() {
     // Pipe the child process stdout to the current stdout
     execa('echo', ['start web app...']).stdout.pipe(process.stdout);
-    const stream = execa('node', [path.join(__dirname, 'node_modules/pxt/cli'), 'serve', '--just', '--noBrowser']);
-    stream.stdout.on('data', chunk => {
-        let stdString = chunk.toString().trim();
-        if (stdString.indexOf("To launch the editor, open this URL:") != -1) {
-            let patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
-            let result = patt.exec(stdString.replace('---------------------------------------------', '').replace('\n', ''));
-            try {
-                console.log(result);
-                execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
-                execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
-                createWindow({type: "url", url: result[0]});
-                return;
-            } catch (e) {
-                createWindow({type: "file", url: 'index.html'});
-                return;
-            }
-        }
-    });
-    createWindow({type: "file", url: 'index.html'});
+    logger.info("start web app ......................")
+    // const stream = execa('node', [path.join(__dirname, 'node_modules/pxt/pxt'), 'serve', '--just', '--noBrowser']);
+    try {
+        require(path.join(__dirname, 'node_modules/pxt/pxt'));
+        // stream.stdout.on('data', chunk => {
+        //     logger.info(stdString)
+        //     let stdString = chunk.toString().trim();
+        //     if (stdString.indexOf("To launch the editor, open this URL:") != -1) {
+        //         let patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
+        //         let result = patt.exec(stdString.replace('---------------------------------------------', '').replace('\n', ''));
+        //         logger.info('started web service at ', result[0]);
+        //         execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
+        //         execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
+        //         // createWindow({type: "url", url: result[0]});
+        //         createWindow({type: "file", url: 'index.html'});
+        //     }
+        // });
+    } catch (e) {
+        logger.info(e)
+        createWindow({type: "file", url: 'index.html'});
+        return;
+    }
 };
 
 // This method will be called when Electron has finished

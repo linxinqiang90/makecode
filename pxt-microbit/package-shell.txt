@@ -1,4 +1,22 @@
-electron-packager . app --win --out presenterTool --arch=x64 --app-version 1.0.0 --overwrite
+electron-packager . app --win --out MakecodeTool --arch=64 --app-version 1.0.0 --overwrite --platform=win32 --asar=true
 
 
-electron-packager . makecode --platform=win32 --out MakeCode --arch=x64 --overwrite=true --appVersion=1.0.0 --no-prune
+electron-packager . makecode --platform=win32 --out MakecodeTool --arch=x64 --overwrite=true --appVersion=1.0.0 --no-prune
+
+
+
+//server.js
+const {app, BrowserWindow, Menu, Tray} = require('electron');
+// Create the browser window.
+let mainWindow = new BrowserWindow({
+    width: 1500,
+    height: 800,
+    center: true,
+    backgroundColor: '#80FFFFFF',
+    title: "test"
+});
+
+mainWindow.loadURL('http://localhost:3232');
+
+//cli
+require(path).mainCli(targetdir,['serve','--just','--noBrowser']);
