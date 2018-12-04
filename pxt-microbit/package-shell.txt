@@ -20,3 +20,10 @@ mainWindow.loadURL('http://localhost:3232');
 
 //cli
 require(path).mainCli(targetdir,['serve','--just','--noBrowser']);
+
+app.exe --log-net-log=netlog.json
+
+--no-proxy-server
+--enable-sandbox
+app.commandLine.appendSwitch('auto-detect', 'false')
+app.commandLine.appendSwitch('no-proxy-server')
