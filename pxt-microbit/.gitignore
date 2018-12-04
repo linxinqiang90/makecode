@@ -10,6 +10,7 @@
 
 # dependencies
 /node_modules/
+/MakecodeTool/
 # roadhog-api-doc ignore
 /src/utils/request-temp.js
 _roadhog-api-doc
