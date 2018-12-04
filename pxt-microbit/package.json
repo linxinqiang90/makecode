@@ -44,7 +44,7 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "package-test": "node ./node_modules/electron/cli .",
-    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=x64 --app-version 1.0.0 --overwrite --platform=all --asar=false"
+    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=x64 --app-version 1.0.0 --overwrite --platform=win32 --asar=false"
   },
   "devDependencies": {
     "@types/bluebird": "2.0.33",
@@ -52,15 +52,15 @@
     "@types/marked": "0.3.0",
     "@types/node": "8.0.53",
     "@types/web-bluetooth": "0.0.4",
+    "acorn": "^6.0.4",
     "electron-packager": "^12.2.0",
     "electron-webpack": "^2.6.1",
-    "webpack": "^4.26.0",
     "less": "2.7.3",
     "semantic-ui-less": "2.2.14",
-    "typescript": "2.6.1"
+    "typescript": "2.6.1",
+    "webpack": "^4.26.0"
   },
   "dependencies": {
-    "acorn": "^6.0.4",
     "electron": "^3.1.0-beta.2",
     "execa": "^1.0.0",
     "install": "^0.12.2",

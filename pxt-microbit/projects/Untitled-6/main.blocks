@@ -11,4 +11,13 @@
       </shadow>
     </value>
   </block>
+  <block type="setServoPulse" disabled="true" x="176" y="346">
+    <field name="channel">Servo.LED.红灯</field>
+    <value name="pulse">
+      <shadow type="math_number_minmax">
+        <mutation min="0" max="19999" label="Pulse"></mutation>
+        <field name="SLIDER">1500</field>
+      </shadow>
+    </value>
+  </block>
 </xml>

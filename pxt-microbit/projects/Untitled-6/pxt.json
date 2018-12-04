@@ -3,7 +3,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "LEDrgb": "*"
+        "LEDrgb": "*",
+        "MOTOR": "*"
     },
     "description": "",
     "files": [
