@@ -1,7 +1,7 @@
 {
   "name": "pxt-microbit",
   "version": "1.2.16",
-  "main": "./node_modules/pxt/pxt",
+  "main": "main.js",
   "description": "micro:bit target for Microsoft MakeCode (PXT)",
   "keywords": [
     "JavaScript",
@@ -50,7 +50,6 @@
     "@types/marked": "0.3.0",
     "@types/node": "8.0.53",
     "@types/web-bluetooth": "0.0.4",
-    "electron": "^3.0.10",
     "electron-packager": "^12.2.0",
     "electron-webpack": "^2.6.1",
     "webpack": "^4.26.0",
@@ -59,6 +58,7 @@
     "typescript": "2.6.1"
   },
   "dependencies": {
+    "electron": "^3.0.10",
     "acorn": "^6.0.4",
     "execa": "^1.0.0",
     "install": "^0.12.2",
