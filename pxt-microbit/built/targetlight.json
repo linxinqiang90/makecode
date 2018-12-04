@@ -259,9 +259,9 @@
       "additionalFilePaths": []
     },
     "files": {
-      "README.md": "",
       "main.blocks": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <block type=\"pxt-on-start\"></block>\n  <block type=\"device_forever\"></block>\n</xml>",
-      "main.ts": "\n"
+      "main.ts": "\n",
+      "README.md": ""
     }
   },
   "tsprj": {
@@ -280,8 +280,8 @@
       "additionalFilePaths": []
     },
     "files": {
-      "README.md": "",
-      "main.ts": "basic.showLeds(`\n    . . . . .\n    . # . # .\n    . . . . .\n    # . . . #\n    . # # # .\n    `);"
+      "main.ts": "basic.showLeds(`\n    . . . . .\n    . # . # .\n    . . . . .\n    # . . . #\n    . # # # .\n    `);",
+      "README.md": ""
     }
   }
 }
