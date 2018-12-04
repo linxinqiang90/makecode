@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/bh1750_cn",
+  "time": 1529476071,
+  "name": "BH1750",
+  "description": "makecode 的 BH1750 环境光强度传感器 micro:bit 软件包",
+  "version": "1.2.0",
+  "hash": "20ce2003d6467b18729e7df8259df645b29a686097ea328b4555c7e953ebdc5d"
+}

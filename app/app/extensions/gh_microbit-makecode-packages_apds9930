@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/apds9930",
+  "time": 1529475629,
+  "name": "APDS9930",
+  "description": "makecode APDS9930 Digital Proximity and Ambient Light Sensor package",
+  "version": "1.1.0",
+  "hash": "8ab7d7fbc1e560fbdcbf71e3349949e8d5d126cc195533195cc8cd26e9d8cac6"
+}

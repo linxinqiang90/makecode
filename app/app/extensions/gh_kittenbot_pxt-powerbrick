@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/kittenbot/pxt-powerbrick",
+  "time": 1539419422,
+  "name": "powerbrick",
+  "description": "Powerbrick series module for microbit",
+  "version": "0.2.1",
+  "hash": "a109f180f594997ca01315c63f1810ff9f4e70076498e62557a9c1724620a54a"
+}

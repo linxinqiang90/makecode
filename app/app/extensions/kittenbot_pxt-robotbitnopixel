@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/kittenbot/pxt-robotbitnopixel",
+  "time": 1537858613,
+  "name": "robotbitnopixel",
+  "description": "Extension for Kittenbot Robotbit",
+  "version": "0.2.0",
+  "hash": "be12057f6c5bcf29d1b3815d52ea58bf79d8aa367670f01dec3463f238add257"
+}

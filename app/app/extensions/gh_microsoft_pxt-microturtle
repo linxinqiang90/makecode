@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microsoft/pxt-microturtle",
+  "time": 1536681630,
+  "name": "microturtle",
+  "description": "A LOGO-like turtle library",
+  "version": "0.0.9",
+  "hash": "bb0524c7e35be1865570853229e25e64c4230c0f56b11591009e2822365533ff"
+}

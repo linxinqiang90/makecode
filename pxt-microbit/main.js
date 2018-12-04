@@ -54,14 +54,14 @@ async function startApp() {
     // Pipe the child process stdout to the current stdout
     logger.info('start web app...');
     process.argv[2] = 'serve';
-    process.argv[3] = '--just';
-    process.argv[4] = '--noBrowser';
-    process.argv[5] = '--hostname';
-    process.argv[6] = 'localhost';
-    process.argv[7] = '--port';
-    process.argv[8] = '3232';
-    process.argv[9] = '--wsport';
-    process.argv[10] = '3233';
+    process.argv[3] = '--noBrowser';
+    // process.argv[4] = '--just';
+    // process.argv[5] = '--hostname';
+    // process.argv[6] = 'localhost';
+    // process.argv[7] = '--port';
+    // process.argv[8] = '3232';
+    // process.argv[9] = '--wsport';
+    // process.argv[10] = '3233';
     process.env["HOME"] = path.join(__dirname);
     console.info(process.env["HOME"]);
     try {

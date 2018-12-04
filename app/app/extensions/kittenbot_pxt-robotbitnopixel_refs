@@ -1,0 +1,8 @@
+{
+  "refs": {
+    "HEAD": "980c3d18364d26091627e7eba10f04166b055b09",
+    "refs/heads/master": "980c3d18364d26091627e7eba10f04166b055b09",
+    "refs/tags/v0.2.0": "980c3d18364d26091627e7eba10f04166b055b09"
+  },
+  "hash": "8d2bc25531dcab6ed798ffb0e23fe5be2bedf739b085642802dd8724fe907ff0"
+}

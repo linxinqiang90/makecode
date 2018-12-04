@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/kittenbot/pxt-neomatrix",
+  "time": 1539147429,
+  "name": "neomatrix",
+  "description": "NeoMatrix Display",
+  "version": "0.1.1",
+  "hash": "240d91d880501a6d99a5e9f7a7875e30443ac3c6b08906ead4905362082b7cc4"
+}

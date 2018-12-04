@@ -3,7 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/pxt-common-packages/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/pxt-microbit-test/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/pxt-microbit/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/pxt/built/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/pxt/node_modules" />

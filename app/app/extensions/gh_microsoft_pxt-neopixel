@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microsoft/pxt-neopixel",
+  "time": 1539040947,
+  "name": "neopixel",
+  "description": "AdaFruit NeoPixel driver",
+  "version": "0.6.10",
+  "hash": "1abcacf79067ebf1637a2b919512087f9e296800930c54b6d0697569fae654d0"
+}

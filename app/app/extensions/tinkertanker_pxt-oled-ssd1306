@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/tinkertanker/pxt-oled-ssd1306",
+  "time": 1538026449,
+  "name": "SSD1306_OLED",
+  "description": "Tinkercademy package for SSD1306 OLED controller",
+  "version": "1.1.1",
+  "hash": "de476846c61bbeae65e38fb6cb678a366c0db4d1824143ea56d93aeb7bb976fc"
+}

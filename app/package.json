@@ -1,0 +1,27 @@
+{
+  "name": "Makecode",
+  "description": "Makecode",
+  "version": "1.0.0",
+  "author": "",
+  "main": "entry.js",
+  "scripts": {
+
+    "start": "node ./node_modules/pxt/pxt serve --just --noBrowser",
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "package-test": "node ./node_modules/electron/cli .",
+    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=x64 --app-version 1.0.0 --overwrite --platform=win32 --asar=false"
+  },
+  "dependencies": {
+    "drivelist": "^6.2.2",
+    "electron": "^3.0.10",
+    "electron-google-analytics": "^0.1.0",
+    "electron-is-dev": "^0.3.0",
+    "electron-updater": "^2.18.2",
+    "fs-extra": "^5.0.0",
+    "node-hid": "^0.7.2",
+    "serialport": "^6.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/tm1650_cn",
+  "time": 1522742921,
+  "name": "TM1650",
+  "description": "makecode TM1650 （4 位数码管显示） 的 microbit 软件包",
+  "version": "1.1.0",
+  "hash": "bbd2536238de7c2deed15b153fd79443928c4305b1b45b20df0c48b59f7ac726"
+}

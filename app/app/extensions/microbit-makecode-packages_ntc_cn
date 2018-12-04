@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/ntc_cn",
+  "time": 1524299260,
+  "name": "NTC",
+  "description": "makecode 的 NTC 温度传感器 micro:bit 软件包",
+  "version": "1.1.0",
+  "hash": "a15f8428d831bc4fb723c6c8ec3489c6617ba2d40d73beca36fc3a4c5bbf96c9"
+}

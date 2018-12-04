@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/oled12864_i2c",
+  "time": 1529475435,
+  "name": "OLED12864_I2C",
+  "description": "makecode I2C OLED 128 x 64 Package for micro:bit",
+  "version": "1.1.0",
+  "hash": "f2a4a41e29424dfa32ac68d2b1b132883d4965a660c14cbca3fff158dc683714"
+}

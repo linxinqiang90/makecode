@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/kittenbot/pxt-kittenwifi",
+  "time": 1537873648,
+  "name": "kittenwifi",
+  "description": "Extension for Kittenbot Wifi module",
+  "version": "0.1.6",
+  "hash": "5ba8ea11816303cd96082ac8ea21dac35df86b5b10b0c7e130f7b9f9a30002b3"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "script",
+  "id": "gh/microbit-makecode-packages/bme280_cn",
+  "time": 1527041797,
+  "name": "BME280",
+  "description": "makecode BME280 数字温湿度、气压传感器 micro:bit 软件包",
+  "version": "1.1.0",
+  "hash": "dde3bdb1a233cea86b4b346417d444ae70374c9e0863c622fea715edec5a8dc2"
+}

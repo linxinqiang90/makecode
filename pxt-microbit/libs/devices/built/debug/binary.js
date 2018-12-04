@@ -52,7 +52,7 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P345.info = {"start":310,"length":29,"line":13,"column":24,"endLine":13,"endColumn":53,"fileName":"pxt_modules/bluetooth/bluetooth.ts","functionName":"inline"}
+inline__P345.info = {"start":323,"length":29,"line":13,"column":24,"endLine":13,"endColumn":53,"fileName":"pxt_modules/bluetooth/bluetooth.ts","functionName":"inline"}
 
 
 
@@ -71,7 +71,7 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-__log__P344.info = {"start":227,"length":58,"line":10,"column":4,"endLine":12,"endColumn":5,"fileName":"pxt_modules/bluetooth/bluetooth.ts","functionName":"__log"}
+__log__P344.info = {"start":237,"length":60,"line":10,"column":4,"endLine":12,"endColumn":5,"fileName":"pxt_modules/bluetooth/bluetooth.ts","functionName":"__log"}
 
 
 
@@ -124,7 +124,7 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-addListener__P204.info = {"start":1217,"length":186,"line":46,"column":4,"endLine":51,"endColumn":5,"fileName":"pxt_modules/core/console.ts","functionName":"addListener"}
+addListener__P204.info = {"start":1263,"length":191,"line":46,"column":4,"endLine":51,"endColumn":5,"fileName":"pxt_modules/core/console.ts","functionName":"addListener"}
 
 
 setupDebugger(1)
