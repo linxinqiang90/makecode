@@ -66,7 +66,7 @@ async function startApp() {
     console.info(process.env["HOME"]);
     try {
         require(path.join(__dirname, 'node_modules/pxt/pxt'));
-        createWindow({type: "file", url: 'index.html'});
+        createWindow({type: "url", url: 'http://localhost:3232#local_token=48d9da18-d76f-4fc0-0943-62760c5294321'});
     } catch (e) {
         logger.error(e)
         return;
