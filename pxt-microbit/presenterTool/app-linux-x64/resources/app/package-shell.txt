@@ -1,0 +1,4 @@
+electron-packager . app --win --out presenterTool --arch=x64 --app-version 1.0.0 --overwrite
+
+
+electron-packager . makecode --platform=win32 --out MakeCode --arch=x64 --overwrite=true --appVersion=1.0.0 --no-prune

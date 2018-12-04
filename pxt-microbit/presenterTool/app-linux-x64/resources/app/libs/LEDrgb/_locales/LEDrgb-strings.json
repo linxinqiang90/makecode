@@ -1,0 +1,6 @@
+{
+  "Servo.ServoPulse|block": "LED灯  灯颜色选择|%channel|亮度 %pulse",
+  "Servo.Servo|block": "Servo channel|%channel|degree %degree",
+  "Servo|block": "LEDrgb",
+  "{id:category}Servo": "Servo"
+}
