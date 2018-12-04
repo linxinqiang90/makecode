@@ -52,27 +52,23 @@ function createWindow(data) {
 
 async function startApp() {
     // Pipe the child process stdout to the current stdout
-    execa('echo', ['start web app...']).stdout.pipe(process.stdout);
-    logger.info("start web app ......................")
-    // const stream = execa('node', [path.join(__dirname, 'node_modules/pxt/pxt'), 'serve', '--just', '--noBrowser']);
+    logger.info('start web app...');
+    process.argv[2] = 'serve';
+    process.argv[3] = '--just';
+    process.argv[4] = '--noBrowser';
+    process.argv[5] = '--hostname';
+    process.argv[6] = 'localhost';
+    process.argv[7] = '--port';
+    process.argv[8] = '3232';
+    process.argv[9] = '--wsport';
+    process.argv[10] = '3233';
+    process.env["HOME"] = path.join(__dirname);
+    console.info(process.env["HOME"]);
     try {
         require(path.join(__dirname, 'node_modules/pxt/pxt'));
-        // stream.stdout.on('data', chunk => {
-        //     logger.info(stdString)
-        //     let stdString = chunk.toString().trim();
-        //     if (stdString.indexOf("To launch the editor, open this URL:") != -1) {
-        //         let patt = new RegExp("(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]", "g");
-        //         let result = patt.exec(stdString.replace('---------------------------------------------', '').replace('\n', ''));
-        //         logger.info('started web service at ', result[0]);
-        //         execa('echo', ['started web service at ', result[0]]).stdout.pipe(process.stdout);
-        //         execa('echo', ['start deskapp for makecode...']).stdout.pipe(process.stdout);
-        //         // createWindow({type: "url", url: result[0]});
-        //         createWindow({type: "file", url: 'index.html'});
-        //     }
-        // });
-    } catch (e) {
-        logger.info(e)
         createWindow({type: "file", url: 'index.html'});
+    } catch (e) {
+        logger.error(e)
         return;
     }
 };

@@ -38,11 +38,13 @@
     "docs/static/icons/favicon.ico"
   ],
   "scripts": {
-    "start": "./node_modules/pxt/pxt serve",
+    "start": "node ./node_modules/pxt/pxt serve --just --noBrowser",
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
     "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "package-test": "node ./node_modules/electron/cli .",
+    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=ia32 --app-version 1.0.0 --overwrite --platform=win32 --asar=true"
   },
   "devDependencies": {
     "@types/bluebird": "2.0.33",
