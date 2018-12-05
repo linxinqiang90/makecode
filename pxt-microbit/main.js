@@ -56,17 +56,18 @@ async function startApp() {
     process.argv[2] = 'serve';
     process.argv[3] = '--noBrowser';
     process.argv[4] = '--just';
-    // process.argv[5] = '--hostname';
-    // process.argv[6] = 'localhost';
-    // process.argv[7] = '--port';
-    // process.argv[8] = '3232';
-    // process.argv[9] = '--wsport';
-    // process.argv[10] = '3233';
+    process.argv[5] = '--hostname';
+    process.argv[6] = 'localhost';
+    process.argv[7] = '--port';
+    process.argv[8] = '3232';
+    process.argv[9] = '--wsport';
+    process.argv[10] = '3233';
     process.env["HOME"] = path.join(__dirname);
-    console.info(process.env["HOME"]);
+    process.chdir(app.getAppPath());
+    logger.info(process.cwd());
     try {
         require(path.join(__dirname, 'node_modules/pxt/pxt'));
-        createWindow({type: "url", url: 'http://localhost:3232#local_token=48d9da18-d76f-4fc0-0943-62760c5294321'});
+        // createWindow({type: "url", url: 'http://localhost:3232#local_token=48d9da18-d76f-4fc0-0943-62760c5294321'});
     } catch (e) {
         logger.error(e)
         return;
