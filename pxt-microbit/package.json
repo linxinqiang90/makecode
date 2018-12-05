@@ -44,7 +44,7 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "package-test": "node ./node_modules/electron/cli .",
-    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=x64 --app-version 1.0.0 --overwrite --platform=win32 --asar=true"
+    "package": "node ./node_modules/electron-packager/cli . app --out MakecodeTool --arch=x64 --app-version 1.0.0 --overwrite --platform=win32 --asar=false"
   },
   "devDependencies": {
     "@types/bluebird": "2.0.33",
