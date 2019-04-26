@@ -27,3 +27,8 @@ app.exe --log-net-log=netlog.json
 --enable-sandbox
 app.commandLine.appendSwitch('auto-detect', 'false')
 app.commandLine.appendSwitch('no-proxy-server')
+
+替换
+server.js
+
+/pxt-core/build/server.js
