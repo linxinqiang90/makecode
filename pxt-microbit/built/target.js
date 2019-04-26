@@ -1,8 +1,8 @@
 var pxtTargetBundle = {
   "id": "microbit",
   "nickname": "microbit",
-  "name": "makecode.microbit.org",
-  "title": "Microsoft MakeCode for micro:bit",
+  "name": "stem6.com",
+  "title": "思特牛",
   "description": "A Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode.",
   "corepkg": "core",
   "bundleddirs": [
@@ -3942,8 +3942,8 @@ var pxtTargetBundle = {
       }
     ],
     "id": "microbit",
-    "title": "Microsoft MakeCode for micro:bit",
-    "name": "makecode.microbit.org",
+    "title": "思特牛",
+    "name": "stem6.com",
     "description": "A Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode.",
     "htmlDocIncludes": {}
   },
